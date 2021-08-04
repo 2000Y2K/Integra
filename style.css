@@ -1,0 +1,166 @@
+@font-face {
+    font-family: GothamPro-Light;
+    src: url(resources/GothamPro-Light.woff);
+    }
+    @font-face {
+    font-family: GothamPro-Medium;
+    src: url(resources/GothamPro-Medium.woff);
+    }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#c {
+    width: 100%;
+    height: 100%;
+    display: block;
+    user-select: unset;
+    outline: none;
+
+}
+#container {
+
+  user-select: unset;
+  z-index: 1;
+position: absolute;
+}
+
+#informacion {
+font-family: GothamPro-Light;
+position:fixed;
+display:block;
+left: 65%; 
+width: 35%;
+height: 100%;
+visibility: hidden;
+background-color: white;
+
+}
+.parrafoInfo{
+font-size: 1em;
+line-height: 1.8;
+}
+#tituloInfo{
+color:rgb(27, 165, 215);
+font-size: 1.4em;
+}
+
+#cerrar{
+cursor:pointer;
+position: absolute;
+left: -35px;
+top: 15%;
+margin: 0 0;
+padding: 0;
+}
+#menues{
+font-family: GothamPro-Light;
+font-size:2em;
+position:fixed;
+display:flex;
+visibility:visible;
+
+}
+.menu{
+position:fixed;
+display:flex;
+right: 5%;
+}
+.menuTexto{
+font-family: GothamPro-Medium;
+position:relative;
+font-size: 0.6em;
+float:left;
+color:white;
+margin:2em;
+padding: 0.5em 1em;
+}
+
+#contacto{
+position:fixed;
+left:3vw;
+top:75vh;
+}
+
+#slogan{
+    color:rgb(203, 212, 215); 
+    position:fixed;
+    left: 5%;
+    top:75%;
+    height: 30%
+}
+
+#integra{
+    width:145px;
+    height:95px
+}
+
+
+@media only screen and (max-width: 681px) {
+    #menues{
+        font-family: GothamPro-Light;
+        font-size:1.2em;
+
+        visibility:visible;
+        display:flex;
+        justify-content:center;
+        width: 50%;
+        top: 2%;
+        }
+    .menu{
+        position: relative; 
+        left: 49%;
+        justify-self: center
+    }
+    #informacion {
+        font-family: GothamPro-Light;
+        position:fixed; 
+        width: 100%;
+        height: 100%;
+        top:50%;
+        left:0%;    
+        visibility: hidden;
+        background-color: rgb(255, 255, 255);
+        display:flex;
+        }
+    #slogan{
+        color:rgb(203, 212, 215); 
+        position:fixed;
+        left: 25%;
+        top:85%;
+        width: 200px;
+    }
+
+    #contacto{
+        position:fixed;
+        right: 22%;
+        top:3%;
+        width: 30%;
+        }
+
+    #cerrar{
+        cursor:pointer;
+        position: absolute;
+        left: 75%;
+        top: -35px;
+        margin: 0 0;
+        padding: 0;
+        z-index: 10;
+        }
+
+    .parrafoInfo{
+        font-size: 0.8em;
+        line-height: 1.2;
+        }
+
+    #tituloInfo{
+    color:rgb(27, 165, 215);
+    font-size: 1em;
+    }
+    
+    #integra{
+        width:87px;
+        height:57px
+    }
+  }
